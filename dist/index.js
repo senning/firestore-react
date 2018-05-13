@@ -17,7 +17,9 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     return t;
 };
 import * as React from "react";
-import * as firebase from "firebase";
+import firebase from "@firebase/app";
+import '@firebase/firestore';
+
 export function createContainer(WrappedComponent, queryMapFn) {
     return /** @class */ (function (_super) {
         __extends(class_1, _super);
