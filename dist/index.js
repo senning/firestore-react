@@ -71,7 +71,7 @@ export function createContainer(WrappedComponent, queryMapFn) {
             }
         };
         class_1.prototype.render = function () {
-            return React.createElement(WrappedComponent, __assign({}, this.state.results));
+            return React.createElement(WrappedComponent, __assign({}, this.state.results, this.props));
         };
         return class_1;
     }(React.Component));
